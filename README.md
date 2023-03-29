@@ -6,7 +6,7 @@ For run api go to api directory and run this:dotnet run
 
 For run the application go to api directory and run this:npx react-native start
 
-My API Address : 'http://10.0.2.2:5049'
+My API Address : 'http://10.0.2.2:5049/books'
 
 <img src="https://user-images.githubusercontent.com/76557196/228671373-32059576-3c61-4348-9a2a-0fc69ae7a66c.png" alt="alt text" width="200" height="450">
 
