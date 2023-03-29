@@ -5,16 +5,15 @@ function UseFetch(url) {
     const [ data, setData ] = useState();
     const fetchData =async ()=> {
         try {
-            const {responseData} = await axios.get(url)
-            setData (responseData)
+            const {data} = await axios.get(url)
+            setData(data)
+            console.log(responseData)
         } catch (error) {
             console.log (error)
         }
     }
-    useEffect (()=> {
-        fetchData(), []
-    }) 
-    return data;
+    useEffect (()=> {fetchData()}, []) 
+    return {data};
 }
 
 export default UseFetch;

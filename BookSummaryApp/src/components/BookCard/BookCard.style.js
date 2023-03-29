@@ -5,7 +5,8 @@ export default StyleSheet.create ({
         backgroundColor : '#e6e6fa',
         borderColor : '#bdbdbd',
         borderWidth :1,
-        borderRadius :10,
+        borderRadius :15,
+        margin : 5,
     },
     name :{
         fontSize: 18,
@@ -14,14 +15,15 @@ export default StyleSheet.create ({
         paddingLeft:10,
         paddingBottom:5,
         textAlign : 'center'
-    },
+    }, 
     author :{
         fontSize:15,
         fontWeight:'bold',
         color:'gray',
         paddingLeft:10,
         paddingBottom:10,
-        textAlign : 'right'
+        textAlign : 'right',
+        marginRight: 8,
     },
 
     description :{
