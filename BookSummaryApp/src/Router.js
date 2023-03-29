@@ -11,11 +11,12 @@ function Router () {
   return(
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="List" component={ListScreen}></Stack.Screen>
-        <Stack.Screen name="Details" component={DetailsScreen}></Stack.Screen>
+        <Stack.Screen name="List" component={ListScreen} options ={{headerShown : false}}></Stack.Screen>
+        <Stack.Screen name="Details" component={DetailsScreen} options={{ title:"Summary",headerStyle:{backgroundColor:"#CCCCFF"},headerTitleStyle:{color:"black"}, headerTintColor:"purple"}}
+        ></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
-  )
+  ) 
 }
 
 export default Router;
