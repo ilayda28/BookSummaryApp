@@ -1,12 +1,15 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, } from "react-native";
+import BookCard from "../../components/BookCard";
+import styles from './listScreen.style';
 
 function listScreen () {
     return (
-        <View>
-            <Text>listScree</Text>
+        <View style = {styles.container}>
+            <BookCard></BookCard>
         </View>
     )
 }
 
 export default listScreen ;
+
