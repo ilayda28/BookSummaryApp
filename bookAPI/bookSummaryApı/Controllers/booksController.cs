@@ -62,7 +62,7 @@ public class booksController : ControllerBase
         Summary="The novel follows the life of Winston Smith, a low-ranking member of the ruling Party who works at the Ministry of Truth. Winston secretly rebels against the Party by keeping a diary and falling in love with Julia, a fellow dissident. However, he soon discovers that the Party is watching his every move and will stop at nothing to crush his spirit."
         },
 
-    new Book(){
+        new Book(){
         id =6,
         Title="The Lord of the Rings",
         Author=  "J.R.R. Tolkien", 
@@ -70,7 +70,7 @@ public class booksController : ControllerBase
         Summary="The novel follows the quest of Frodo Baggins, a young hobbit who inherits a powerful ring from his uncle Bilbo. Frodo must destroy the ring in the fires of Mount Doom before it falls into the hands of the Dark Lord Sauron, who seeks to conquer all of Middle-earth. Along the way, Frodo is aided by a fellowship of friends and allies, including Gandalf the wizard, Aragorn the ranger, Legolas the elf, Gimli the dwarf and Samwise Gamgee, his loyal companion."
         },
         
-    new Book(){
+        new Book(){
         id=7,
         Title="Jane Eyre",
         Author= "Charlotte Brontë", 
@@ -93,6 +93,7 @@ public class booksController : ControllerBase
     {
         return bookList;
     }
+    
     [HttpGet("{id}")]
     public Book GetById(int id)
         {
